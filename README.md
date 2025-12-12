@@ -1,4 +1,4 @@
-#SP500 SQL Dashboard
+# SP500 SQL Dashboard
 
 This simple project presents a SQL and Python based dashboard for analyzing historical SP500 Futures daily data using database PostgreSQL and Python. 
 The dataset includes daily closing prices and percentage changes, allowing for various time-series analyses.
@@ -12,4 +12,5 @@ SQL queries:
 -Track monthly averages and the longest streaks of gains or losses
 
 All analysis is done using SQL and Python to visualize.
+
 
