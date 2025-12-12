@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![ETL](https://img.shields.io/badge/Pipeline-ETL-orange)
 
-An interactive financial dashboard backed by a relational database. This project demonstrates an end-to-end data engineering pipeline: fetching stock market data, modeling it in a SQL database, and visualizing insights via a Streamlit web application.
+An interactive financial dashboard backed by a relational database. This project demonstrates an end-to-end data engineering pipeline: fetching stock market data, modeling it in a SQL database, and visualization.
 
 ## Project Overview
 
@@ -14,7 +14,6 @@ Unlike simple CSV-based analysis, this project simulates a production-grade envi
 **Key Features:**
 * **ETL Pipeline:** Python scripts to fetch S&P 500 data (tickers, financials, historical prices) and load them into a normalized SQL database.
 * **SQL-Driven Analysis:** Key metrics (Moving Averages, Daily Returns, Volatility) are computed using SQL queries.
-* **Interactive Dashboard:** A Streamlit frontend allowing users to filter companies by sector, view price trends, and analyze fundamental metrics.
 * **Data Persistence:** Uses a relational database (SQLite/PostgreSQL) to store historical data.
 
 ## Architecture
@@ -22,7 +21,6 @@ Unlike simple CSV-based analysis, this project simulates a production-grade envi
 1.  **Ingestion:** Data is scraped from Wikipedia (constituents) and fetched via APIs (Yahoo Finance).
 2.  **Storage:** Data is normalized into relational tables (e.g., `companies`, `stock_prices`, `financials`).
 3.  **Processing:** SQL Window Functions and aggregations transform raw data into analytical metrics.
-4.  **Presentation:** Streamlit visualizes the results.
 
 ## Database Schema
 
@@ -54,3 +52,4 @@ SELECT
     ) as ma_50
 FROM fact_prices
 WHERE symbol = 'AAPL';
+
